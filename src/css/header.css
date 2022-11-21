@@ -1,0 +1,119 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+}
+.header__logo img {
+  width: 200px;
+}
+.header__container ul li a {
+  transition: all 0.5s ease-in-out;
+}
+nav {
+  max-width: 150px;
+  font-size: 40px;
+}
+.header__menu__horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__menu__horizontal > li > a {
+  background-color: white;
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+.header__menu__horizontal > li:hover {
+  background-color: #333;
+}
+.header__menu__vertical {
+  background-color: whitesmoke;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 40%;
+  border: 1px;
+  border: solid;
+  border-radius: 20px;
+}
+.header__menu__vertical li > a:hover {
+  color: blueviolet;
+}
+.header__menu__vertical li a {
+  display: block;
+  color: black;
+  padding: 15px 15px 15px 20px;
+  text-decoration: none;
+}
+.header__menu__horizontal > li:hover .header__menu__vertical {
+  display: block;
+}
+.header__login {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  margin: auto;
+}
+.header__login a:hover {
+  background-color: #a436f0;
+  transition: all 0.5s ease-in-out;
+}
+.header__login__log {
+  background-color: white;
+  display: block;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  border: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.header__login__reg {
+  background-color: #333;
+  display: block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  border: 1px;
+  border-style: solid;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .header__menu__horizontal {
+    font-size: 29px;
+  }
+  .header__login {
+    width: 300px;
+  }
+  .header__login__log {
+    padding: 10px;
+    font-size: 25px;
+  }
+  .header__login__reg {
+    padding: 10px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 1440px) {
+  .header__menu__horizontal {
+    font-size: 40px;
+  }
+  .header__login {
+    width: 400px;
+  }
+  .header__login__log {
+    padding: 20px;
+    font-size: 30px;
+  }
+  .header__login__reg {
+    padding: 20px;
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,19 @@
+.footer__container {
+  margin-top: 2%;
+  background-color: #1c1d1f;
+  color: #fff;
+  padding: 0.5%;
+  display: flex;
+  flex-direction: row;
+}
+.footer__container img {
+  width: 10%;
+}
+.footer__container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.footer__container h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}

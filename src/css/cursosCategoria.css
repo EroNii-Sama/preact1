@@ -1,0 +1,80 @@
+.cursosCategorias__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cursosCategorias__tittleContainer {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  color: black;
+}
+.cursosCategorias__tittleContainer h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+}
+.cursosCategorias__flip__card {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+.cursosCategorias__flip__card h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+}
+.cursosCategorias__flip__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cursosCategorias__flip__card__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.cursosCategorias__flip__card:hover .cursosCategorias__flip__card__inner {
+  transform: rotateY(180deg);
+}
+.cursosCategorias__flip__card__front,
+.cursosCategorias__flip__card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cursosCategorias__flip__card__front {
+  color: black;
+}
+.cursosCategorias__flip__card__back {
+  background-color: #a436f0;
+  color: white;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+@media (min-width: 768px) {
+  .cursosCategorias__tittleContainer h1 {
+    font-size: 40px;
+  }
+  .cursosCategorias__flip__card h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .cursosCategorias__tittleContainer h1 {
+    font-size: 45px;
+  }
+  .cursosCategorias__flip__card h2 {
+    font-size: 45px;
+  }
+}

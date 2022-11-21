@@ -1,0 +1,34 @@
+.banner__container {
+  display: block;
+}
+.banner__container img {
+  width: 100%;
+}
+.banner__container h1 {
+  color: black;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: left;
+}
+.banner__container p {
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .banner__container h1 {
+    font-size: 70px;
+  }
+  .banner__container p {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .banner__container h1 {
+    font-size: 100px;
+  }
+  .banner__container p {
+    font-size: 40px;
+  }
+}
